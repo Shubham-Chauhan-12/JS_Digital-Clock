@@ -6,7 +6,7 @@
 
 }
 
-body , .time{
+body , .time , .left-side, .right-side, .right-top, .right-down{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body{
 }
 
 
-.digital-clock , .time{
+.digital-clock , .time , .right-side ,  .right-top, .right-down{
     position: relative;
 }
 
@@ -38,4 +38,9 @@ body{
     padding: 0px 10px;
     line-height: 125px;
     font-weight: 600px;
+}
+
+
+.right-side{
+    flex-direction: column;
 }
