@@ -35,7 +35,7 @@
      max-width: 400px;
      width: 100%;
      padding: 30px 5%;
-     box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+     /* box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8); */
      border-radius: 10px;
  }
 
@@ -89,5 +89,36 @@
          max-width: 90%;
          padding: 30px 2%;
 
+     }
+ }
+
+
+ .digital-clock::before {
+     content: '';
+     position: absolute;
+     background: linear-gradient(45deg, blue, orange, green);
+     background-size: 200% 200%;
+     top: -5px;
+     left: -5px;
+     bottom: -5px;
+     right: -5px;
+     z-index: -1;
+     filter: blur(50px);
+     animation: glowing 5s ease infinite;
+ }
+
+
+ @keyframes glowing{
+
+     0% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
      }
  }
