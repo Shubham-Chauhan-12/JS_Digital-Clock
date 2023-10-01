@@ -1,2 +1,6 @@
 # JS_Digital-Clock
-Digital Clock built with JavaScript
+
+Dynamic Digital Clock built with JavaScript
+
+
+built by- SHUBHAM CHAUHAN
