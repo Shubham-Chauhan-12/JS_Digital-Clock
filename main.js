@@ -9,11 +9,20 @@ const period = document.querySelector('#period');
 
 function digitalClock() {
 
-    const currenthours = new Date().getHours();
-    const currentminutes = new Date().getMinutes();
-    const currentseconds = new Date().getSeconds();
+    let currenthours = new Date().getHours();
+    let currentminutes = new Date().getMinutes();
+    let currentseconds = new Date().getSeconds();
 
-    const currentPeriod = currenthours >= 12 ? "PM" : "AM";
+    let currentPeriod = currenthours >= 12 ? "PM" : "AM";
+
+
+    // assigned 0 in prefix of single digit value
+
+    currenthours = currenthours < 10 ? "0" + currenthours : currenthours;
+    currentminutes = currentminutes < 10 ? "0" + currentminutes : currentminutes;
+    currentseconds = currentseconds < 10 ? "0" + currentseconds : currentseconds;
+    
+    
 
     hours.innerHTML = currenthours;
     minutes.innerHTML = currentminutes;
