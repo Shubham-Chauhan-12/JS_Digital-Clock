@@ -44,3 +44,10 @@ body{
 .right-side{
     flex-direction: column;
 }
+
+
+#dot{
+    font-size: 4em;
+    transform: translateY(-3px);
+    color: gray;
+}
