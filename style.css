@@ -1,81 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+ }
 
-}
+ body,
+ .time,
+ .left-side,
+ .right-side,
+ .right-top,
+ .right-down {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-body , .time , .left-side, .right-side, .right-top, .right-down{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ body {
+     min-height: 100vh;
+     background-color: #2e2e45;
+ }
 
+ .digital-clock,
+ .time,
+ .right-side,
+ .right-top,
+ .right-down {
+     position: relative;
+ }
 
-body{
-    min-height: 100vh;
-    background-color: #2e2e45;
-}
+ .digital-clock {
+     color: #ffff;
+     background: #2d2f38;
+     max-width: 400px;
+     width: 100%;
+     padding: 30px 5%;
+     box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+     border-radius: 10px;
+ }
 
+ #hours {
+     font-size: 8em;
+     padding: 0px 10px;
+     line-height: 125px;
+     font-weight: 600;
+ }
 
-.digital-clock , .time , .right-side ,  .right-top, .right-down{
-    position: relative;
-}
+ .right-side {
+     flex-direction: column;
+ }
 
+ #dot {
+     font-size: 4em;
+     transform: translateY(-3px);
+     color: gray;
+ }
 
-.digital-clock{
-    color: #ffff;
-    background: #2d2f38;
-    width: 400px;
-    padding: 20px 50px;
-    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
-    border-radius: 10px;
-}
+ #minutes {
+     font-size: 5em;
+     font-weight: 500;
+     margin-left: 10px;
+ }
 
-#hours{
-    font-size: 8em;
-    padding: 0px 10px;
-    line-height: 125px;
-    font-weight: 600px;
-}
+ .right-down {
+     margin-left: 10px;
+     transform: translateY(-10px);
+ }
 
+ #period,
+ #seconds {
+     font-size: 1.8em;
+     font-weight: 600;
+     margin-left: 10px;
+ }
 
-.right-side{
-    flex-direction: column;
-}
+ #seconds {
+     color: white;
+ }
 
+ #period {
+     color: orange;
+ }
 
-#dot{
-    font-size: 4em;
-    transform: translateY(-3px);
-    color: gray;
-}
+ /* Media Queries for Responsive Design */
 
+ @media screen and (max-width: 600px) {
+     .digital-clock {
+         max-width: 90%;
+         padding: 30px 2%;
 
-#minutes{
-    font-size: 5em;
-    font-weight: 500;
-    margin-left: 10px;
-}
-
-.right-down{
-    margin-left: 10px;
-    transform: translateY(-10px);
-}
-
-
-#period , #seconds{
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-#seconds{
-    color: white;
-}
-
-#period{
-    color: orange;
-}
-
+     }
+ }
