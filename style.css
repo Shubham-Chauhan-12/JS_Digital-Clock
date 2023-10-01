@@ -65,9 +65,17 @@ body{
 }
 
 
-#period {
+#period , #seconds{
     font-size: 1.8em;
     font-weight: 500;
     margin-left: 10px;
+}
+
+#seconds{
+    color: white;
+}
+
+#period{
+    color: orange;
 }
 
