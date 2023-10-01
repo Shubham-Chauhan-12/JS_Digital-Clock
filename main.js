@@ -15,6 +15,12 @@ function digitalClock() {
 
     let currentPeriod = currenthours >= 12 ? "PM" : "AM";
 
+    // Changing clock format to 12 hr
+
+    if(currenthours >12 ){
+        currenthours = currenthours -12;
+    }
+
 
     // assigned 0 in prefix of single digit value
 
