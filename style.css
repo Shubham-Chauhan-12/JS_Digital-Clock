@@ -32,3 +32,10 @@ body{
     box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
     border-radius: 10px;
 }
+
+#hours{
+    font-size: 8em;
+    padding: 0px 10px;
+    line-height: 125px;
+    font-weight: 600px;
+}
