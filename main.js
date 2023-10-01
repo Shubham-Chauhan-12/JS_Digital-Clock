@@ -9,4 +9,14 @@ const currentminutes = new Date().getMinutes();
 const currentseconds = new Date().getSeconds();
 
 
-const currentZone = currenthours >= 12 ? "PM" : "AM";
+const currentPeriod = currenthours >= 12 ? "PM" : "AM";
+
+console.log(currenthours,
+    currentminutes,
+    currentseconds , currentPeriod);
+
+
+ hours.innerHTML = currenthours ;
+ minutes.innerHTML = currentminutes;
+ seconds.innerHTML = currentseconds;
+ period.innerHTML =  currentPeriod
