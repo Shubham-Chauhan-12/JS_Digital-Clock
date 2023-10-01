@@ -1,7 +1,10 @@
-const hours = document.getElementById('#hours');
-const minutes = document.getElementById('#minutes');
-const seconds = document.getElementById('#seconds');
-const period = document.getElementById('#period');
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
+const period = document.querySelector('#period');
+
+
+console.log(hours,minutes,seconds,period);
 
 
 const currenthours = new Date().getHours();
@@ -16,7 +19,15 @@ console.log(currenthours,
     currentseconds , currentPeriod);
 
 
- hours.innerHTML = currenthours ;
- minutes.innerHTML = currentminutes;
- seconds.innerHTML = currentseconds;
- period.innerHTML =  currentPeriod
+
+function digitalClock(){
+        hours.innerHTML = currenthours ;
+        minutes.innerHTML = currentminutes;
+        seconds.innerHTML = currentseconds;
+        period.innerHTML =  currentPeriod;
+
+}
+alert('it is working');
+digitalClock();
+
+
