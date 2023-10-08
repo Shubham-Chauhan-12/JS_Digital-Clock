@@ -6,7 +6,6 @@ const period = document.querySelector('#period');
 
 // console.log(hours,minutes,seconds,period);
 
-
 function digitalClock() {
 
     let currenthours = new Date().getHours();

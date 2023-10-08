@@ -92,7 +92,6 @@
      }
  }
 
-
  .digital-clock::before {
      content: '';
      position: absolute;
